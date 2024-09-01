@@ -24,5 +24,5 @@ void Watchdog::reset()
 void IRAM_ATTR Watchdog::onTimeout()
 {
     ets_printf("(watchdog) reiniciar\n");
-    esp_restart_noos(); // Reinicia o ESP32
+    esp_restart(); // Reinicia o ESP32
 }
